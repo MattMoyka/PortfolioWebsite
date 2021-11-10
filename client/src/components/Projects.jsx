@@ -6,6 +6,7 @@ import salesverse from '../assets/salesverse.png'
 export default function Projects() {
   return (
     <div className='project-container'>
+      <h3 id='projects-title'>My Projects</h3>
       <div className='project-card'>
         <a href='https://18bogeys.netlify.app/' target="_blank"><img src={golf} className='project-img' /></a>
         <div className='project-div'>

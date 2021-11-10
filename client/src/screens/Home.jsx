@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div>
       <div className='space-one'></div>
-      <Landing />
       <AboutMe />
       <Projects />
       <Skills />

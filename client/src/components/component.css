@@ -1,19 +1,38 @@
 .aboutme-container{
-background: aquamarine;
-height: 100px;
-margin-top: 90vh;
-padding: 20px 50px;
-text-align: center;
+background: inherit;
+width: 100%;
+margin-top: 100px;
+padding: 50px 0px;
+z-index: 3;
+position: relative;
+text-align: left;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+border-radius: 5px;
+background-color: rgba(255, 255, 255, .15);
+backdrop-filter: blur(5px);
 }
-.aboutme-title{
-  font-size: 2rem;
 
+.aboutme-title{
+  
+background: inherit;
+font-size: 2.5rem;
+text-align: center;
+color: white;
 }
 
 .aboutme-p{
   font-size: 1.5rem;
 }
 
+.aboutme-text{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
 
 /* ============================= */
 
@@ -23,7 +42,10 @@ flex-direction: column;
 align-items: center;
 gap: 50px;
 margin-top: 70vh;
-background-color: blue;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+border-radius: 5px;
+background-color: rgba(255, 255, 255, .15);
+backdrop-filter: blur(5px);
 padding: 50px 0;
 }
 
@@ -41,22 +63,42 @@ height: 250px;
 
 .project-div{
 height: 190px;
-background-color: aquamarine;
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+border-radius: 5px;
+background-color: rgba(255, 255, 255, .15);
+backdrop-filter: blur(5px);
 font-size: 1.5rem;
 padding: 30px;
 }
 
+#projects-title{
+  font-size: 2.5rem;
+  color: white;
+}
 
 /* ================= */
+
+.icon-page{
+  margin: 50vh auto;
+  padding: 50px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+border-radius: 5px;
+background-color: rgba(255, 255, 255, .15);
+backdrop-filter: blur(5px);
+}
+
+.skills-title{
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
 
 .icon-container{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-margin: 90vh auto;
 justify-items: center;
 gap: 50px;
-background-color: blue;
 padding: 50px;
 }
 
