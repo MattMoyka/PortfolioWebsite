@@ -1,0 +1,71 @@
+.aboutme-container{
+background: aquamarine;
+height: 100px;
+margin-top: 90vh;
+padding: 20px 50px;
+text-align: center;
+}
+.aboutme-title{
+  font-size: 2rem;
+
+}
+
+.aboutme-p{
+  font-size: 1.5rem;
+}
+
+
+/* ============================= */
+
+.project-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 50px;
+margin-top: 70vh;
+background-color: blue;
+padding: 50px 0;
+}
+
+.project-card{
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  gap: 50px;
+
+}
+
+.project-img{
+height: 250px;
+}
+
+.project-div{
+height: 190px;
+background-color: aquamarine;
+font-size: 1.5rem;
+padding: 30px;
+}
+
+
+/* ================= */
+
+.icon-container{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+margin: 90vh auto;
+justify-items: center;
+gap: 50px;
+background-color: blue;
+padding: 50px;
+}
+
+#logo-card{
+  height: 100px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+#icon{
+
+}

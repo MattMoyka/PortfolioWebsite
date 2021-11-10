@@ -1,0 +1,7 @@
+
+body{
+  background: url("./assets/bgSVG.svg") ;
+  background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
