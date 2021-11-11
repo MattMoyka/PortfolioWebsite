@@ -2,11 +2,28 @@ import './layout.css'
 import { NavHashLink } from 'react-router-hash-link'
 import { Icon } from '@iconify/react';
 import websitelogo from '../assets/websitelogo.png'
+import { Typewriter } from 'typewriting-react';
+import { useState } from 'react';
 
 export default function Layout(props) {
+  const [toggle, setToggle] = useState(true)
+
   return (
     <div >
-      <nav className='nav-container'>
+      <div className='intro-page'>
+        <div className='landing-block'>
+          <div className='landing-title'>
+            {toggle ? <Typewriter words={['Hello', 'My name is Matt', 'Welcome to my site, I hope you enjoy your visit']}
+              onFinished={() => {
+                setToggle(false)
+              }}
+            /> : <div>Click the button or scroll down to start exploring. </div>}
+          </div>
+          <NavHashLink smooth to='/#nav' ><button type="button" class="btn btn-dark landing-button">Explore</button></NavHashLink>
+
+        </div>
+      </div>
+      <nav className='nav-container' id='nav'>
         <img className='website-logo' src={websitelogo} alt='matt moyka software engineer' />
         <div className='nav-links'>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#who' id='nav-link-font'>Who Am I?</NavHashLink>
