@@ -1,3 +1,7 @@
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
 .aboutme-container{
 background: inherit;
 width: 100%;
@@ -63,24 +67,28 @@ padding: 50px 0;
 }
 
 .project-img{
-height: 250px;
+height: 500px;
 }
 
 .project-div{
-height: 190px;
+height: 500px;
 box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
 border-radius: 5px;
 background-color: rgba(255, 255, 255, .15);
 backdrop-filter: blur(5px);
-font-size: 1.5rem;
+font-size: 1.25rem;
 padding: 30px;
 }
 
 .projects-title{
   font-size: 2.5rem;
-  color: white;
+  color: black;
 }
 
+
+.list-group, .list-group-item{
+background: transparent
+}
 /* ================= */
 
 .icon-page{
@@ -96,7 +104,7 @@ backdrop-filter: blur(5px);
   width: 100%;
   font-size: 2.5rem;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .icon-container{
@@ -110,7 +118,7 @@ padding: 50px;
 #logo-card{
   height: 100px;
   padding: 20px;
-  background-color: lightgray;
+  
 }
 
 #icon{
