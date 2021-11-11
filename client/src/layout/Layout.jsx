@@ -1,5 +1,6 @@
 import './layout.css'
 import { NavHashLink } from 'react-router-hash-link'
+import { Icon } from '@iconify/react';
 
 export default function Layout(props) {
   return (
@@ -13,6 +14,13 @@ export default function Layout(props) {
         </div>
       </nav>
       {props.children}
+      <footer className='footer' >
+        <div>Visit me below!</div>
+        <div className='footer-container'>
+          <a href='https://github.com/MattMoyka' target="_blank"><Icon icon="jam:github" className='footer-icon' width="80" height="80" /></a>
+          <a href='https://www.linkedin.com/in/matthew-moyka-952651111/' target="_blank"><Icon icon="bi:linkedin" className='footer-icon' width="80" height="80" /></a>
+        </div>
+      </footer>
     </div>
   )
 }

@@ -30,3 +30,23 @@
   font-size: 1.25rem;
 
 }
+
+/* ============== */
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  height: 100px;
+  background: lightgray;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background: lightgray;
+  align-items: center;
+  padding: 50px;
+  font-size: 1.5rem;
+}
