@@ -17,8 +17,8 @@ export default function Layout(props) {
       <footer className='footer' >
         <div>Visit me below!</div>
         <div className='footer-container'>
-          <a href='https://github.com/MattMoyka' target="_blank"><Icon icon="jam:github" className='footer-icon' width="80" height="80" /></a>
-          <a href='https://www.linkedin.com/in/matthew-moyka-952651111/' target="_blank"><Icon icon="bi:linkedin" className='footer-icon' width="80" height="80" /></a>
+          <a href='https://github.com/MattMoyka' target="_blank" rel="noreferrer"><Icon icon="jam:github" className='footer-icon' width="80" height="80" /></a>
+          <a href='https://www.linkedin.com/in/matthew-moyka-952651111/' target="_blank" rel="noreferrer"><Icon icon="bi:linkedin" className='footer-icon' width="80" height="80" /></a>
         </div>
       </footer>
     </div>
