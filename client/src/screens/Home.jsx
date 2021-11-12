@@ -8,9 +8,10 @@ export default function Home() {
   return (
     <div>
       <div className='space-one'></div>
-      <AboutMe />
+      {/* <AboutMe />
       <Projects />
-      <Skills />
+      <Skills /> */}
+
     </div>
   )
 }

@@ -79,3 +79,18 @@ padding: 50px;
 .landing-button{
   width: 100px;
 }
+
+.place-holder{
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+
+ .landing-block{
+   width: 350px;
+ }
+}
