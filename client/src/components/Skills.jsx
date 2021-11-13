@@ -10,7 +10,7 @@ export default function Skills() {
         <div className='skills-title'>Skills</div>
         <div className='icon-container'>
           <div id='logo-card'>
-            <Icon icon="logos:html-5" width="100" height="100" />
+            <Icon id='icon' icon="logos:html-5" width="100" height="100" />
           </div>
           <div id='logo-card'>
             <Icon id='icon' icon="logos:css-3" width="100" height="100" />

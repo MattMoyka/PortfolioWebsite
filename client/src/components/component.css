@@ -134,3 +134,36 @@ padding: 50px;
   height: 100px;
   margin-top: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+
+.icon-container{
+width: 375px;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+
+}
+
+#icon{
+  height: 30px;
+}
+
+#logo-card{
+  padding: 0;
+
+}
+
+.project-card{
+  flex-direction: column;
+}
+
+.project-img{
+  width: 250px;
+  height: auto;
+}
+  
+.project-div{
+  height: auto;
+}
+
+ }
