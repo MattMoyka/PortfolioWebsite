@@ -92,7 +92,9 @@ background: transparent
 /* ================= */
 
 .icon-page{
-  margin:0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 50px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
 border-radius: 5px;
@@ -139,9 +141,18 @@ padding: 50px;
 
 .icon-container{
 width: 375px;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 gap: 10px;
+margin: 0;
 
+}
+
+.icon-page{
+
+}
+
+#flip{
+  flex-direction: column-reverse;
 }
 
 #icon{
@@ -165,5 +176,14 @@ gap: 10px;
 .project-div{
   height: auto;
 }
+
+.aboutme-container{
+  flex-direction: column;
+}
+#landing-img{
+  height: 200px;
+}
+
+
 
  }

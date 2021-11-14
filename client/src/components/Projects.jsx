@@ -25,7 +25,7 @@ export default function Projects() {
             </ul>
           </div>
         </div>
-        <div className='project-card'>
+        <div className='project-card' id='flip'>
 
           <div className='project-div'>
             The Docks is a peer to peer rental platform. Have you ever found yourself in need of something, but do not want to pay full price just to test it out? Well at the docks you can rent the gear from someone first and test it out at a much lower cost.

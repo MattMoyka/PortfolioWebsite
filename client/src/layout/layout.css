@@ -98,7 +98,28 @@ padding: 50px;
    width: 350px;
  }
 
- .nav-links{
-   transform: scale(0);
- }
+
+
+#nav-hide{
+transform: scale(0);
+width: 10vw;
+}
+
+#nav-show{
+  transform: scale(1);
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 1 );
+  backdrop-filter: blur(5px);
+}
+
 }

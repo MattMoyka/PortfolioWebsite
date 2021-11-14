@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 export default function Layout(props) {
   const [toggle, setToggle] = useState(true)
+  const [show, setShow] = useState(true)
 
   return (
     <div >
@@ -23,14 +24,14 @@ export default function Layout(props) {
 
         </div>
       </div>
-      <nav className='nav-container' id='nav'>
+      <nav className='nav-container' >
         <img className='website-logo' src={websitelogo} alt='matt moyka software engineer' />
-        <div className='nav-links'>
+        <div className='nav-links' id={show ? 'nav-hide' : 'nav-show'}>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#who' id='nav-link-font'>Who Am I?</NavHashLink>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#projects' id='nav-link-font'>Projects</NavHashLink>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#skills' id='nav-link-font'>Skills</NavHashLink>
         </div>
-        <button>X</button>
+        <button onClick={() => setShow(prevState => !prevState)}>X</button>
       </nav>
       {props.children}
       <footer className='footer' >
