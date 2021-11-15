@@ -4,6 +4,9 @@ import { Icon } from '@iconify/react';
 import websitelogo from '../assets/websitelogo.png'
 import { Typewriter } from 'typewriting-react';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 export default function Layout(props) {
   const [toggle, setToggle] = useState(true)
@@ -25,13 +28,13 @@ export default function Layout(props) {
         </div>
       </div>
       <nav className='nav-container' >
-        <img className='website-logo' src={websitelogo} alt='matt moyka software engineer' />
+        <img className='website-logo' id='nav' src={websitelogo} alt='matt moyka software engineer' />
         <div className='nav-links' id={show ? 'nav-hide' : 'nav-show'}>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#who' id='nav-link-font'>Who Am I?</NavHashLink>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#projects' id='nav-link-font'>Projects</NavHashLink>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#skills' id='nav-link-font'>Skills</NavHashLink>
         </div>
-        <button onClick={() => setShow(prevState => !prevState)}>X</button>
+        <button onClick={() => setShow(prevState => !prevState)} class="navbar-toggler-icon">X</button>
       </nav>
       {props.children}
       <footer className='footer' >
