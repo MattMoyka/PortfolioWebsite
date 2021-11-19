@@ -8,7 +8,7 @@
   background-color: rgba(255, 255, 255, .15);
   backdrop-filter: blur(5px);
   align-items: center;
-  position: sticky;
+  position: sticky !important;
   top: 0;
   left: 0;
   right: 0;
@@ -63,25 +63,34 @@ color: black;
 .landing-block{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 padding: 50px;
   gap: 100px;
-  width: 90vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100%;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+
   border-radius: 5px;
   background-color: rgba(255, 255, 255, .15);
   backdrop-filter: blur(5px);
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .landing-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .landing-button{
   width: 100px;
+}
+#landing-img{
+  clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
 }
 
 .place-holder{
@@ -91,6 +100,11 @@ padding: 50px;
 
 }
 
+.navbar-toggler-icon{
+  transform: scale(0);
+}
+
+
 @media only screen and (max-width: 600px) {
 
 
@@ -98,7 +112,9 @@ padding: 50px;
    width: 350px;
  }
 
-
+ .navbar-toggler-icon{
+  transform: scale(1);
+}
 
 #nav-hide{
 transform: scale(0);
@@ -122,4 +138,59 @@ width: 10vw;
   backdrop-filter: blur(5px);
 }
 
+}
+
+
+
+/* ============ */
+:root {
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+}
+
+.logo{
+ width: 16.25rem; 
+}
+
+/* ============Nav links========== */
+
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+}
+
+.navbar{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2) !important; 
+  border-radius: 5px !important;
+  background-color: rgba(255, 255, 255, .15) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+.container{
+  background: transparent;
+}
+
+.navbar-nav > li > a{
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-black) !important;
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-bottom: 0.1875rem solid var(--primary-white);
+}
+
+.navbar-nav > li > a:hover{
+  border-bottom: 0.1875rem solid var(--primary-white);
 }
