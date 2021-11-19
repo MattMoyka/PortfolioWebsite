@@ -34,7 +34,7 @@ export default function Layout(props) {
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#projects' id='nav-link-font'>Projects</NavHashLink>
           <NavHashLink activeStyle={{ color: 'gray' }} smooth to='/#skills' id='nav-link-font'>Skills</NavHashLink>
         </div>
-        <button onClick={() => setShow(prevState => !prevState)} class="navbar-toggler-icon">X</button>
+        <button onClick={() => setShow(prevState => !prevState)} className="navbar-toggler-icon">X</button>
       </nav>
       {props.children}
       <footer className='footer' >

@@ -91,6 +91,10 @@ padding: 50px;
 
 }
 
+.navbar-toggler-icon{
+  transform: scale(0);
+}
+
 @media only screen and (max-width: 600px) {
 
 
@@ -98,7 +102,9 @@ padding: 50px;
    width: 350px;
  }
 
-
+ .navbar-toggler-icon{
+  transform: scale(1);
+}
 
 #nav-hide{
 transform: scale(0);
