@@ -1,7 +1,4 @@
 
-body{
-  background: url("./assets/bgSVG.svg") ;
-  background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+.App{
+  background-color: #E0C9A6;
 }

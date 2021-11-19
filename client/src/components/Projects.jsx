@@ -17,11 +17,11 @@ export default function Projects() {
             18 Bogeys is a golf game tracker. It records various information about your round and displays it among all the other games logged in the app.
             <br />
             <br />
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               Tech Stack
-              <li class="list-group-item">React</li>
-              <li class="list-group-item">Tailwind</li>
-              <li class="list-group-item">Airtable</li>
+              <li className="list-group-item">React</li>
+              <li className="list-group-item">Tailwind</li>
+              <li className="list-group-item">Airtable</li>
             </ul>
           </div>
         </div>
@@ -31,13 +31,13 @@ export default function Projects() {
             The Docks is a peer to peer rental platform. Have you ever found yourself in need of something, but do not want to pay full price just to test it out? Well at the docks you can rent the gear from someone first and test it out at a much lower cost.
             <br />
             <br />
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               Tech Stack
-              <li class="list-group-item">React</li>
-              <li class="list-group-item">Express</li>
-              <li class="list-group-item">MongoDB</li>
-              <li class="list-group-item">Heroku</li>
-              <li class="list-group-item">B-Crypt</li>
+              <li className="list-group-item">React</li>
+              <li className="list-group-item">Express</li>
+              <li className="list-group-item">MongoDB</li>
+              <li className="list-group-item">Heroku</li>
+              <li className="list-group-item">B-Crypt</li>
             </ul>
           </div>
           <Tilt><a href='https://thedocks.netlify.app/' target="_blank" rel="noreferrer"><img src={docks} className='project-img' alt='The docks app' /></a></Tilt>
@@ -48,12 +48,12 @@ export default function Projects() {
             SalesVerse is the small business sales coordinator that will get your team on track and up to date. This program will hold all the info on the items you sell as well as displaying margin and other important info needed when deciding a price. In addition it will display over all stats based on revenue and percent growth.
             <br />
             <br />
-            <ul class="list-group list-group-flush">
+            <ul className="list-group list-group-flush">
               Tech Stack
-              <li class="list-group-item">React</li>
-              <li class="list-group-item">Rails</li>
-              <li class="list-group-item">Heroku</li>
-              <li class="list-group-item">B-Crypt</li>
+              <li className="list-group-item">React</li>
+              <li className="list-group-item">Rails</li>
+              <li className="list-group-item">Heroku</li>
+              <li className="list-group-item">B-Crypt</li>
             </ul>
           </div>
         </div>
