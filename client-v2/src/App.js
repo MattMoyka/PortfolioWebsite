@@ -4,7 +4,7 @@ import { Route } from 'react-router';
 import { Switch } from 'react-router';
 import Layout from './layout/Layout';
 import Landing from './screens/Landing';
-
+import Skills from './screens/Skills'
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
           </Route>
           <Route exact path='/Home'>
             <Landing />
+          </Route>
+          <Route path='/Skills'>
+            <Skills />
           </Route>
         </Switch>
       </Layout>
