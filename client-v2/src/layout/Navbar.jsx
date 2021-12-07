@@ -37,7 +37,7 @@ export default function Navbar() {
             sx={{ mr: 2, display: { xs: 'flex', md: 'flex' } }}
           >
             {/* <img src={websitelogo} style={{ height: '100px', filter: 'invert(100%)' }} alt='website logo matt moyka' /> */}
-            Matt Moyka
+            <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>Matt Moyka</Link>
           </Typography>
 
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
