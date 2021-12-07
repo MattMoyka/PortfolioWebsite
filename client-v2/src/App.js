@@ -6,7 +6,7 @@ import Layout from './layout/Layout';
 import Landing from './screens/Landing';
 import Skills from './screens/Skills'
 import Aboutme from './screens/Aboutme';
-import Projects from './Projects';
+import Projects from './screens/Projects';
 
 function App() {
   return (
