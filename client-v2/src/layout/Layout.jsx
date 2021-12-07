@@ -3,10 +3,12 @@ import Footer from "./Footer"
 
 export default function Layout(props) {
   return (
-    <div style={{ height: '100vh' }}>
+    <div>
       <Navbar />
       {props.children}
-      <Footer />
+      <div style={{ position: 'fixed', bottom: '0' }}>
+        <Footer />
+      </div>
     </div>
   )
 }

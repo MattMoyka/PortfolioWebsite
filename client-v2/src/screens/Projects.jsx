@@ -10,7 +10,7 @@ import { Grid } from "@mui/material"
 export default function Projects() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}>
         <img src={bogeys} alt='18 bogeys' style={{ height: '300px', margin: '30px' }} />
         <Box sx={{ textAlign: 'left' }} >
           <Typography variant='h4' sx={{ mt: '30px', ml: '30px' }}>
@@ -29,7 +29,7 @@ export default function Projects() {
           </Grid>
         </Box>
       </Box>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}>
 
         <img src={thedocks} alt='The Docks' style={{ height: '300px', margin: '30px' }} />
         <Box sx={{ textAlign: 'left' }} >
@@ -50,7 +50,7 @@ export default function Projects() {
           </Grid>
         </Box>
       </Box>
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}>
 
         <img src={salesverse} alt='Salesverse' style={{ height: '300px', margin: '30px' }} />
         <Box sx={{ textAlign: 'left' }} >
@@ -71,6 +71,7 @@ export default function Projects() {
           </Grid>
         </Box>
       </Box>
+      <div style={{ height: '200px' }}></div>
     </Box >
   )
 }
