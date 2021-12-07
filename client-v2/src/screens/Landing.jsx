@@ -6,8 +6,8 @@ import { useHistory } from 'react-router';
 export default function Landing() {
   const history = useHistory()
   return (
-    <Box sx={{ width: '100%', maxWidth: 500, textAlign: 'left', margin: '100px' }}>
-      <Typography variant='h2'>
+    <Box sx={{ width: { xs: '60vw', sm: '100vw' }, maxWidth: 500, textAlign: 'left', margin: '100px auto' }}>
+      <Typography variant='h2' >
         Matt Moyka
       </Typography>
       <Typography variant='h4'>
@@ -20,5 +20,6 @@ export default function Landing() {
         Check out my projects
       </Button>
     </Box>
+
   )
 }
