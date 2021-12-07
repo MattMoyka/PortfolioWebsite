@@ -2,11 +2,20 @@ import Paper from '@mui/material/Paper';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+
 import headshot from '../assets/headshot.jpg'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-
+import { useState } from 'react';
 import resume from '../assets/resume.pdf'
 export default function Aboutme() {
+
+  const [page, setPage] = useState(1);
+  const handleChange = (event, value) => {
+    setPage(value);
+  };
+
   return (
     <Box  >
       <Paper elevation={10} sx={{
@@ -28,8 +37,14 @@ export default function Aboutme() {
       </Paper>
       <Paper elevation={10} sx={{ margin: '0 auto', width: '70vw', mt: '50px' }}>
         <Document file={resume}>
-          <Page pageNumber={1} />
+          <Page pageNumber={page} />
         </Document>
+        <Stack spacing={2} sx={{ alignItems: 'center' }}>
+          <Typography>Page: {page}</Typography>
+          <Pagination count={2} page={page} onChange={handleChange} />
+        </Stack>
+
+
       </Paper>
     </Box>
   )
