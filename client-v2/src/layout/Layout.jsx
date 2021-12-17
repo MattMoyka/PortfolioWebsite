@@ -6,9 +6,9 @@ export default function Layout(props) {
     <div>
       <Navbar />
       {props.children}
-      <div style={{ position: 'fixed', bottom: '0' }}>
-        <Footer />
-      </div>
+
+      <Footer />
+
     </div>
   )
 }

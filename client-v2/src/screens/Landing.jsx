@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 export default function Landing() {
   const history = useHistory()
   return (
-    <Box sx={{ width: { xs: '60vw', sm: '100vw' }, maxWidth: 500, textAlign: 'left', margin: '100px auto' }}>
+    <Box sx={{ width: { xs: '60vw', sm: '100vw' }, maxWidth: 500, textAlign: 'left', margin: '100px auto', height: '45vh' }}>
       <Typography variant='h2' >
         Matt Moyka
       </Typography>

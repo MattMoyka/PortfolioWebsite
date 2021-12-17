@@ -1,10 +1,10 @@
 import Paper from '@mui/material/Paper';
 import { Box } from '@mui/system';
-import { Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-
+import './screen.css'
 import headshot from '../assets/headshot.jpg'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import { useState } from 'react';
@@ -32,11 +32,12 @@ export default function Aboutme() {
           <Typography variant='body1' sx={{ fontSize: { xs: '.7rem', sm: '1rem' } }}>
             I am a junior software developer with a mechanical engineering degree breaking into the tech space. I enjoy solving problems that will help others and turning ideas into tangible products. When I am not working, I enjoy traveling, fishing and golfing.
           </Typography>
+          <a href={resume} download style={{ textDecoration: 'none' }}><Button variant='contained' sx={{ mt: '30px', fontSize: { xs: '.7rem', sm: '1rem' } }}>Download My Resume Here</Button></a>
         </Box>
         <Avatar src={headshot} alt="matt moyka" sx={{ width: { xs: '100px', sm: '200px' }, height: { xs: '100px', sm: '200px' } }} />
       </Paper >
       <Paper elevation={10} sx={{ margin: '0 auto', width: { xs: '100vw', sm: '70vw' }, mt: '50px' }}>
-        <Document file={resume} style={{ overflow: 'auto' }}>
+        <Document file={resume} className='pdf'>
           <Page pageNumber={page} />
         </Document>
         <Stack spacing={2} sx={{ alignItems: 'center' }}>

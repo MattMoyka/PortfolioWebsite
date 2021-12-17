@@ -70,7 +70,7 @@ export default function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <Link to={`/${page}`} style={{ textDecoration: 'none' }}><MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Link to={`/${page}`} key={page} style={{ textDecoration: 'none' }}><MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem></Link>
               ))}
@@ -79,7 +79,7 @@ export default function Navbar() {
 
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link to={`/${page}`} style={{ textDecoration: 'none' }}> <Button
+              <Link to={`/${page}`} key={page} style={{ textDecoration: 'none' }}> <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}

@@ -1,5 +1,4 @@
 import { Box } from "@mui/system"
-import { Stack } from "@mui/material"
 import { Typography } from "@mui/material"
 import bogeys from '../assets/18bogeys.png'
 import thedocks from '../assets/thedocks.png'
@@ -21,10 +20,10 @@ export default function Projects() {
           </Typography>
           <Grid container spacing={2} sx={{ margin: '30px' }}>
             <Grid item>
-              <Button variant='contained'><a href='https://18bogeys.netlify.app/' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Website</a></Button>
+              <Button variant='contained'><a href='https://18bogeys.netlify.app/' target='_blank' rel="noreferrer" style={{ textDecoration: 'none', color: 'white' }}>Website</a></Button>
             </Grid>
             <Grid item>
-              <Button variant='contained'><a href='https://github.com/MattMoyka/18-Bogeys' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Github</a></Button>
+              <Button variant='contained'><a href='https://github.com/MattMoyka/18-Bogeys' target='_blank' rel="noreferrer" style={{ textDecoration: 'none', color: 'white' }}>Github</a></Button>
             </Grid>
           </Grid>
         </Box>
@@ -42,10 +41,10 @@ export default function Projects() {
           </Typography>
           <Grid container spacing={2} sx={{ margin: '30px' }}>
             <Grid item>
-              <Button variant='contained'><a href='https://thedocks.netlify.app/' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Website</a></Button>
+              <Button variant='contained'><a href='https://thedocks.netlify.app/' target='_blank' rel="noreferrer" style={{ textDecoration: 'none', color: 'white' }}>Website</a></Button>
             </Grid>
             <Grid item>
-              <Button variant='contained'><a href='https://github.com/MattMoyka/The-Dock' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Github</a></Button>
+              <Button variant='contained'><a href='https://github.com/MattMoyka/The-Dock' target='_blank' rel="noreferrer" style={{ textDecoration: 'none', color: 'white' }}>Github</a></Button>
             </Grid>
           </Grid>
         </Box>
@@ -63,10 +62,10 @@ export default function Projects() {
           </Typography>
           <Grid container spacing={2} sx={{ margin: '30px' }}>
             <Grid item>
-              <Button variant='contained'><a href='https://salesverse.netlify.app/' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Website</a></Button>
+              <Button variant='contained'><a href='https://salesverse.netlify.app/' target='_blank' rel="noreferrer" style={{ textDecoration: 'none', color: 'white' }}>Website</a></Button>
             </Grid>
             <Grid item>
-              <Button variant='contained'><a href='https://github.com/MattMoyka/SalesVerse' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>Github</a></Button>
+              <Button variant='contained'><a href='https://github.com/MattMoyka/SalesVerse' target='_blank' rel="noreferrer" style={{ textDecoration: 'none', color: 'white' }}>Github</a></Button>
             </Grid>
           </Grid>
         </Box>
