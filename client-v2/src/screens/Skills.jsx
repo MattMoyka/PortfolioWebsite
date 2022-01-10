@@ -49,6 +49,18 @@ export default function Skills() {
             <Icon icon="logos:ruby" width="50" height="50" />
             <Typography>Ruby</Typography>
           </Grid>
+          <Grid item xs={4} sm={3}>
+            <Icon icon="logos:nextjs" width="50" height="50" />
+            <Typography>Next.js</Typography>
+          </Grid>
+          <Grid item xs={4} sm={3}>
+            <Icon icon="logos:tailwindcss-icon" width="50" height="50" />
+            <Typography>Tailwind CSS</Typography>
+          </Grid>
+          <Grid item xs={4} sm={3}>
+            <Icon icon="logos:aws-amplify" width="50" height="50" />
+            <Typography>AWS Amplify</Typography>
+          </Grid>
         </Grid>
       </Paper>
     </Box>
