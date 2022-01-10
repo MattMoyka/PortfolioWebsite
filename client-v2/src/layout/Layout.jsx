@@ -3,7 +3,7 @@ import Footer from "./Footer"
 
 export default function Layout(props) {
   return (
-    <div>
+    <div style={{ height: '100vh' }}>
       <Navbar />
       {props.children}
 
