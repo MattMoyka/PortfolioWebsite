@@ -7,7 +7,6 @@ export default function Layout(props) {
       <Navbar />
       {props.children}
 
-      <Footer />
 
     </div>
   )
