@@ -16,7 +16,7 @@ export default function Landing() {
           Matt Moyka
         </Typography>
         <Typography variant='body1' sx={{ fontSize: '1.5rem' }}>
-          I am a fullstack developer with a mechanical engineering degree. My goal is to help you turn your ideas into a reality.
+          I am a fullstack developer/mechanical engineer.
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'column', width: { xs: '30vw', md: '20vw' }, margin: '0 auto' }}>
           <Button color='primary' onClick={() => (history.push('/Projects'))} variant='contained' sx={{ mt: '20px' }}>
