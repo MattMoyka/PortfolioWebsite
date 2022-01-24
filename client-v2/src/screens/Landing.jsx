@@ -42,10 +42,12 @@ export default function Landing() {
             <Typography variant='body1' sx={{ fontSize: { xs: '.7rem', sm: '1rem' } }}>
               I am a junior software developer with a mechanical engineering degree breaking into the tech space. I enjoy solving problems that will help others and turning ideas into tangible products. When I am not working, I enjoy traveling, fishing and golfing.
             </Typography>
-            <a href={resume} download style={{ textDecoration: 'none' }}><Button variant='contained' sx={{ mt: '30px', fontSize: { xs: '.7rem', sm: '1rem' } }}>Download My Resume Here</Button></a>
-            <Button color='primary' onClick={() => (history.push('/Projects'))} variant='contained' sx={{ mt: '20px', fontSize: { xs: '.7rem', sm: '1rem' } }}>
-              Check out my projects
-            </Button>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <a href={resume} download style={{ textDecoration: 'none' }}><Button variant='contained' sx={{ mt: '30px', fontSize: { xs: '.7rem', sm: '1rem' }, width: '300px' }}>Download My Resume Here</Button></a>
+              <Button color='primary' onClick={() => (history.push('/Projects'))} variant='contained' sx={{ mt: '20px', fontSize: { xs: '.7rem', sm: '1rem' }, width: '300px' }}>
+                Check out my projects
+              </Button>
+            </Box>
           </Box>
           <Box sx={{ width: { xs: '80vw', sm: '40vw' } }}>
             <Typography sx={{ fontSize: '1.2rem' }}>My Interests</Typography>

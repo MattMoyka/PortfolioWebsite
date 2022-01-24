@@ -8,6 +8,10 @@ import { Grid } from "@mui/material"
 
 
 export default function Projects() {
+  function componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  componentDidMount()
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' } }}>
