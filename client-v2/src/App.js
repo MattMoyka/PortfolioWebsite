@@ -22,7 +22,7 @@ function App() {
             <Skills />
           </Route>
           <Route path='/About Me'>
-            <Aboutme />
+            <Landing />
           </Route>
           <Route path='/Projects'>
             <Projects />
