@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-const pages = ['Home', 'About Me', 'Projects', 'Skills'];
+const pages = ['About Me', 'Projects', 'Skills'];
 
 
 export default function Navbar() {
