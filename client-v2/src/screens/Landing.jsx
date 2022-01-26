@@ -9,11 +9,13 @@ import headshot from '../assets/headshot.jpg'
 import resume from '../assets/resume.pdf'
 import { Icon } from '@iconify/react';
 import Grid from '@mui/material/Grid';
+import Projects from './Projects';
+
 
 export default function Landing() {
   const history = useHistory()
   return (
-    <Box>
+    <Box sx={{ background: '#3A3B3C' }}>
       <Box sx={{ height: '500px', width: '100vw', backgroundImage: 'url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <Box sx={{ height: '500px', width: '100vw', background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(3px)', position: 'absolute', top: '-10' }}>
           <Box sx={{ width: '60vw', textAlign: 'center', margin: '100px auto', height: '45vh', display: 'flex', justifyContent: 'center' }}>
@@ -33,7 +35,7 @@ export default function Landing() {
       </Box >
 
 
-      <Box sx={{ width: '100vw', m: '0 auto', background: '#3A3B3C', color: 'white', padding: '20px' }}>
+      <Box sx={{ width: '100vw', m: '0 auto 50px auto', background: 'gray', color: 'white', padding: '20px', height: '' }}>
         <Typography variant='h3' sx={{ fontSize: { xs: '1.5rem', sm: '2rem' }, mb: '20px' }}>
           About Me
         </Typography>
@@ -64,7 +66,7 @@ export default function Landing() {
         </Box>
       </Box>
 
-
+      <Projects />
 
     </Box>
 
